@@ -12,17 +12,15 @@ import android.widget.TextView;
 
 import tereshchenko.igor.mobile.R;
 
-public class LinearLayoutActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+public class LinearLayoutActivity extends AppCompatActivity
+{
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         //VBox HBox
-
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.HORIZONTAL);
-
 
         //Label
         TextView lbl = new TextView(this);
@@ -34,15 +32,9 @@ public class LinearLayoutActivity extends AppCompatActivity {
         lbl2.setText("World !");
         lbl2.setBackgroundColor(Color.RED);
 
-
         layout.addView(lbl,300,400);
         layout.addView(lbl2,400,300);
 
-
-
-
         setContentView(layout);
-
     }
-
 }
